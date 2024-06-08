@@ -1,0 +1,157 @@
+div.container-fluid div.d-flex button {
+    margin-right: 10px;
+    width: 120px;
+    height: 46px;
+}
+
+a.navbar-brand{
+    margin-left: -10px;
+}
+div.carousel-inner{
+    height: 650px;
+}
+
+div.carousel-inner div.carousel-item img {
+    filter: brightness(50%);
+    height: 100%;
+}
+
+#randevu-al {
+    background-color: #33b9b2;
+    color: white;
+}
+
+#randevu-al:hover {
+    background-color: #269c96;
+
+}
+
+#harita {
+    background-color: #c10c14;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+#harita:hover {
+    background-color: darkred;
+}
+
+#enabız {
+    background-color: rgb(13, 58, 169);
+}
+
+#enabız:hover {
+    background-color: #051e5a;
+}
+
+#neyimVar {
+    background-color: rgb(39, 170, 225);
+
+}
+
+#neyimVar:hover {
+    background-color: #1a8bbb;
+}
+
+div.carousel-caption {
+    top: 50px;
+    left: 200px;
+    font-size: 300%;
+    font-weight: bold;
+}
+
+p.carousel-text {
+    text-align: left;
+}
+
+p.carousel-text:hover {
+    color: #ececec;
+}
+
+span.carousel-sub-text {
+    font-size: 16px;
+    color: #ececec;
+    font-weight: normal;
+
+}
+
+.duyurular-container {
+    background-color: #f2fafa;
+}
+
+div.custom-alert {
+    background-color: #dff3f3;
+    color: #35a29d;
+}
+
+div.mhrs-uygulamalar {
+    padding: 100px;
+}
+
+div.mhrs-uygulamalar .row .col-3 img {
+    width: 130px;
+    height: 130px;
+}
+
+
+div.mhrs-uygulamalar .row .col-3 p {
+    font-size: 75%;
+}
+
+.e-nabiz-text{
+    padding:98px 50px;
+}
+.e-nabiz-button{
+    background-color: #0d3aa9;
+    color: white;
+    width: 160px;
+    height: 50px;
+    border-radius: 35px;
+    border: none;
+}
+.e-nabiz-text h4{
+    color: #0d3aa9;
+    font-weight: bold;
+}
+.video-container .row{
+    background-color: #f2fafa;
+    padding-top: 120px
+}
+
+.video{
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    margin-bottom:25px;
+}
+
+.video-text{
+    display: inline-block;
+    color: #d40d12;
+    padding:30px;
+}
+
+.red-footer{
+    background-color: #d40d12;
+    height: 100px;
+    text-align: center;
+}
+.red-footer p{
+    padding-top:43px;
+    font-size: 13px;
+}
+.red-footer p a{
+    text-decoration: none;
+}
+
+.dark-footer{
+    background-color: #333;
+    padding: 1%;
+}
+
+.dark-footer-link{
+    color: #848484;
+    font-size: 13px;
+}

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="mhrs_style.css">
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+          integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="shortcut icon" href="images/title-favicon.png" type="image/x-icon">
+    <title>Merkezi Hekim Randevu Sistemi (MHRS)</title>
+<body>
+<!-- NAVBAR -->
+<nav class="navbar bg-white sticky-top" style="padding: 0">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="images/sbLogoKırmızı.png" style="padding: 6px" alt="Bootstrap" height="100" width="100">
+
+            <img class="ms-3" src="images/mhrsLogo.svg" style="padding: 6px" alt="Bootstrap" width="160" height="52">
+        </a>
+        <div class="d-flex mb-4">
+            <button id="randevu-al" class="btn" type="Button">Randevu Al</button>
+            <button id="harita" class="btn" type="Button">
+                <img src="images/harita-icon.svg" height="25.8169" width="25" alt="Harita Icon">
+                <span class="ms-2">Harita</span>
+            </button>
+            <button id="enabız" class="btn" type="Button">
+                <img src="images/e-nabız_button.svg" alt="E nabız">
+            </button>
+            <button id="neyimVar" class="btn" type="Button">
+                <img src="images/neyim_var_button.svg" alt="">
+            </button>
+        </div>
+    </div>
+</nav>
+<!--Carousel -->
+<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+            <img src="images/carousel_1.jpg" class="d-block w-100 h-25" alt="...">
+            <div class="text-start carousel-caption d-none d-md-block">
+                <p class="carousel-text mb-5">Randevu Onayı Nasıl Yapılır? </p>
+                <iframe width="560" height="270" src="https://www.youtube.com/embed/6bsaIbkscU4"
+                        title="Onaylı Randevu Dönemi | Randevu Onay/İptal İşlemi İçin 7 Yöntem" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+            <img src="images/carousel_2.jpg" class="d-block w-100" alt="...">
+            <div class="text-start carousel-caption d-none d-md-block">
+                <p class="carousel-text mb-5">MHRS ve e-Nabız Üzerinden İletişim Numaramı Nasıl Güncellerim?</p>
+                <iframe width="560" height="270" src="https://www.youtube.com/embed/WoAFpT0hhiM"
+                        title="Onaylı Randevu Dönemi | MHRS ve e-Nabız uygulaması üzerinden iletişim numaramı nasıl güncellerim?"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="images/carousel_2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block text-start">
+                <p class="carousel-text">Türkiye'de En Çok Aranan Numara Yine 182</p>
+                <span class="carousel-sub-text">Bilgi Teknolojileri ve İletişim Kurumu verilerine göre 2021 yılında olduğu gibi 2022 yılının ilk çeyreğinde de 182 Türkiye'de en çok aranan numara oldu.</span>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<div class="container-fluid mt-5 duyurular-container">
+    <div class="container p-5">
+        <h3 style="color: #47b6b0" class="mb-5">Duyurular</h3>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="alert custom-alert" role="alert">
+                    Sağlık Bakanlığına bağlı tüm sağlık kurum ve k...
+
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="alert custom-alert" role="alert">
+                    T.C. Sağlık Bakanlığı, Sağlık Bilgi Sistemleri
+                    Gen...
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="alert custom-alert" role="alert">
+                    İhtiyaçları önceliğimiz olan 65 yaş üstü, kanser h...
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="alert custom-alert" role="alert">
+                    e-Devlet şifresi olan vatandaşlarımız, MHRS üyel...
+
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="alert custom-alert" role="alert">
+                    Daha önce EMEA (Avrupa, Orta Asya ve Afrika) b...
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="alert custom-alert" role="alert">
+                    Sağlık Bakanlığına bağlı hastanelerin semt poli...
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5 mhrs-uygulamalar">
+    <div class="row">
+        <div class="col-3 text-center">
+            <img src="images/time2.svg" alt="">
+            <h4>Hızlı Randevu</h4>
+            <p>Mobil uygulama, Web ve Alo182 Randevu hattından istediğiniz hekime anında randevu alabilirsiniz.</p>
+        </div>
+        <div class="col-3 text-center">
+            <img src="images/location2.svg" alt="">
+            <h4>En Yakın Hastane</h4>
+            <p>Mobil Uygulama ve Web üzerinden konum bilgilerinizi paylaşarak size en yakın hastaneyi
+                bulabilirsiniz.</p>
+        </div>
+        <div class="col-3 text-center">
+            <img src="images/steteskop2.svg" alt="">
+            <h4>İstediğiniz Doktor</h4>
+            <p>MHRS üzerinde istediğiniz doktora randevu almak sizin elinizde. </p>
+        </div>
+        <div class="col-3 text-center">
+            <img src="images/neyim_var_logo.svg" alt="">
+            <h4>NeyimVar?</h4>
+            <p>Şikayetinizi girip size özel tanı önerileri ve poliklinik randevusu alabilirsiniz. </p>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-4 offset-2">
+            <div class="e-nabiz-text">
+                <h4>Artık Sağlık Kayıtlarınız <br>
+                    Hep Yanınızda</h4>
+                <p>e-Nabız kişisel sağlık bilgilerinizi yönetebileceğiniz,<br> Türkiye'nin güvenilir kişisel sağlık
+                    kaydı
+                    sistemidir.</p>
+                <button class="e-nabiz-button">
+                    <img src="images/e-nabız_button.svg" alt="E-Nabız Button" class="w-75 h-75">
+                </button>
+            </div>
+        </div>
+        <div class="col-6">
+            <img src="images/right_image_e_nabiz.jpg" alt="" width="750" height="390">
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid video-container">
+    <div class="row">
+        <div class="col-4 offset-2">
+            <div class="video">
+                <img src="images/video1.png" alt="Video Photo" width="150" height="147.033">
+                <h5 class="video-text"><strong>Siz Yorulmayın <br> Artık</strong> e-Nabız Var!</h5>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="video">
+                <img src="images/video2.png" alt="Video Photo" width="150" height="147.033">
+                <h5 class="video-text"><strong>ALO 182 <br></strong> e-Nabız Var!</h5>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid red-footer">
+    <p>
+        Soru ve sorunlarınız için
+        <a href="mailto:mhrsyardim@saglik.gov.tr">
+            <strong style="color: #fff;">mhrsyardim@saglik.gov.tr</strong>
+        </a>
+        adresimizi kullanarak bize ulaşabilirsiniz.
+    </p>
+</div>
+<div class="container-fluid dark-footer">
+    <div class="row">
+        <div class="col-3 ms-3">
+            <div class="col-12">
+                <h6 class="dark-footer-link">Hakkımızda</h6>
+            </div>
+            <div class="col-12">
+                <h6 class="dark-footer-link">Sıkça Sorulan Sorular</h6>
+            </div>
+            <div class="col-12">
+                <h6 class="dark-footer-link">Soru Görüş ve Önerileriniz</h6>
+            </div>
+            <div class="col-12">
+                <h6 class="dark-footer-link">Anket</h6>
+            </div>
+            <div class="col-12">
+                <h6 class="dark-footer-link">Yararlı Bağlantılar</h6>
+            </div>
+        </div>
+        <div class="col-6 text-center">
+            <img src="images/siteSealImage.png" width="120" alt="">
+            <div class="col-12">
+                <p style="color: #848484; font-size: 13px">&copy; 2021 Tüm Hakları Saklıdır</p>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+</body>
+</html>
